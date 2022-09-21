@@ -5,8 +5,6 @@ import data from "../data";
 function Header() {
   let style = { color: "white", margin: "10px" };
 
-  
-
   let nav2style = { "border-bottom": "1px black solid", margin: "0" };
   let placeholder = `Search All ${data.users.length} Users ...`;
   return (
@@ -26,7 +24,7 @@ function Header() {
           <input placeholder={placeholder} />
         </div>
         <p id="headerUser">
-          Welcome Back - GUEST  <i class="fa fa-user-circle" style={style}></i>
+          Welcome Back - GUEST <i class="fa fa-user-circle" style={style}></i>
         </p>
       </Nav>
       <div id="header2" style={nav2style} className="">
@@ -71,8 +69,9 @@ function Header() {
             </div>
           </div>
           <Link to="/loggedout">
-          
-          <li className="itemLogOut"><button class="btn btn-dark">LogOut</button></li>
+            <li className="itemLogOut">
+              <button class="btn btn-dark">LogOut</button>
+            </li>
           </Link>
         </ul>
       </div>

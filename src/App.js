@@ -1,4 +1,3 @@
-import "./App.css";
 import Marketing from "./components/Marketing";
 import data from "./data";
 import Header from "./components/Header";
