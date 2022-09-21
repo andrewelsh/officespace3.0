@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import AdminPage from "./components/AdminPage";
 import User from "./components/User";
 import Login from "./login/Login";
@@ -16,10 +16,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter basename="/">
       <React.StrictMode>
         <Routes>
-          <Route path="/*" element={<Login />} />
+          <Route path="/*" element={<Error />} />
           <Route path="/" element={<Login />} />
           <Route path="/app" element={<App />} />
           <Route path="/user:id" element={<User />} />
@@ -27,6 +27,6 @@ root.render(
           <Route path="/loggedout" element={<LoggedOut />} />
         </Routes>
       </React.StrictMode>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
