@@ -5,7 +5,7 @@ import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AdminPage from "./components/AdminPage";
 import User from "./components/User";
-import Login from "./login/Login"
+import Login from "./login/Login";
 import Error from "./Error";
 
 // Importing the Bootstrap CSS
@@ -19,8 +19,7 @@ root.render(
     <BrowserRouter>
       <React.StrictMode>
         <Routes>
-
-          <Route path="/*" element={<Error />} />
+          <Route path="/*" element={<Login />} />
           <Route path="/" element={<Login />} />
           <Route path="/app" element={<App />} />
           <Route path="/user:id" element={<User />} />
