@@ -1,7 +1,7 @@
 {
   "name": "officespace3.0",
   "version": "0.1.0",
-  "homepage": "https://andre.welsh.github.io/react-gh-pages",
+  "homepage": "https://andrewelsh.github.io/officespace3.0/",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.19.0",
