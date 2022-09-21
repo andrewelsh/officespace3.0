@@ -1,0 +1,419 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    overflow: hidden !important;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Header */
+#headerUser {
+  color: white;
+  margin: auto;
+  margin-right: 20px;
+}
+
+.flashText {
+  font-size: calc(7px + 1vw);
+}
+.flashTitle {
+  font-size: calc(10px + 1vw);
+}
+.flash {
+  margin: 4vw;
+  max-width: 800px;
+  display: inline-table;
+  position: relative;
+  background-color: white;
+  /* width: calc(100px + 50vw); */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px black;
+  width: calc(250px + 20vw);
+}
+
+#header {
+  font-size: 30px;
+  margin-inline: 15px;
+}
+
+/* Header2 */
+.header2 {
+  justify-content: space-evenly;
+  padding: 0px !important;
+
+  /* border: 1px black solid !important; */
+}
+
+ul {
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 0rem !important;
+  /* display: block; */
+  /* display: inline-flex; */
+  margin-top: 11px;
+}
+
+li {
+  margin: 0px;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.itemFile {
+  left: 20px;
+  margin-inline: 10px;
+  text-align-last: center;
+  cursor: pointer;
+}
+
+.itemFile:hover {
+  color: steelblue;
+}
+.itemOptions:hover {
+  color: steelblue;
+}
+.itemLogOut:hover {
+  color: steelblue;
+}
+.itemOptions {
+  left: 70px;
+  margin-inline: 10px;
+  text-align-last: center;
+  cursor: pointer;
+}
+.itemLogOut {
+  top: 58px;
+  right: 0px;
+  margin-inline: 10px;
+  /* text-align-last: center; */
+  position: absolute;
+}
+
+/* Drop Down List */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  padding: 10px;
+  transition: 0.5s;
+  opacity: 0;
+  margin-top: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+a {
+  text-decoration: none !important;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#dropdownText {
+  text-decoration: none;
+  color: steelblue;
+  text-align-last: left;
+  text-indent: 5px;
+}
+
+#dropdownText:hover {
+  background-color: steelblue;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 0px 1px 0px black;
+}
+
+#dropdownOptions {
+  margin-left: 20px;
+}
+
+#dropdownFile {
+  margin-right: 20px;
+}
+/* App */
+.app {
+  /* margin: 0px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 0px; */
+  align-items: flex-start;
+}
+
+.appBtns {
+  display: grid;
+  width: 200px;
+  align-content: center;
+  align-items: center;
+}
+
+.userMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 200px; */
+  padding: 20px;
+}
+.userTextAreaMainContainer {
+  margin-inline: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+p {
+  font-size: 15px;
+}
+
+#taskTitles {
+  font-size: calc(14px + 0.51vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#projectsText {
+  /* padding: 5px;  */
+  font-size: 15px;
+  border-radius: 5px;
+  /* border: 1px solid steelblue; */
+  background-color: rgb(246, 246, 246);
+  margin: 5px 15px;
+  cursor: pointer;
+}
+#projectsText:hover {
+  background-color: white;
+}
+
+i {
+  font-size: 17px !important;
+  color: rgb(0, 0, 0);
+  margin-inline-end: 5px;
+}
+i:hover {
+  transform: scale(1.1);
+  color: steelblue;
+}
+.userImage {
+  width: 200px;
+  margin-bottom: 10px;
+  /* border: black 1px solid; */
+  border-radius: 8px;
+}
+
+.user {
+  /* margin-top: 10px; */
+  text-align-last: left;
+  margin-left: 25px;
+  line-height: 1.75;
+}
+#name {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#strong {
+  font-weight: 600;
+}
+/* Conditional Formating */
+/* Working From Home */
+.wfh {
+  background-color: #ffeb3b;
+  border-radius: 8px;
+  text-align-last: center;
+}
+
+/* BS Dark Button */
+.btn {
+  margin: 5px 10px;
+}
+
+/* BS Card */
+.card {
+  margin: 15px;
+}
+
+.employeeCard {
+}
+
+#employees {
+  /* text-transform: uppercase; */
+  color: steelblue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#employees:hover {
+  text-decoration: underline;
+  text-decoration-color: steelblue;
+}
+
+#white {
+  color: white;
+}
+
+/* Projects Section */
+
+.projectCardMainContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 20px;
+  width: 90%;
+}
+
+.projectCardTitle {
+  /* display: flex;
+  flex-direction: column; */
+  width: 200px;
+}
+
+.conditionalRender {
+  display: inline-grid;
+  justify-items: center;
+}
+
+.projectsTitle {
+  margin-inline-start: 10px;
+}
+.projectCard {
+  border-radius: 4px;
+  margin: 5px;
+  border: black 1px solid;
+  padding: 0px 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+#callToAction {
+  box-shadow: steelblue 0px 0px 10px 0px;
+}
+
+#flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), steelblue);
+}
+/* Footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* Log In  */
+
+.loginMainContainer {
+  text-align: -webkit-center;
+}
+
+.loginSmallerContainer {
+  /* width: 400px; */
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+Link[disabled] {
+  pointer-events: none;
+}
